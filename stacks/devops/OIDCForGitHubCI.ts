@@ -9,7 +9,7 @@ export function OIDCForGitHubCI({ stack }: StackContext) {
   });
 
   const organization = 'bahrain-uob'; // Use your GitHub organization
-  const repository = 'gen-ai-moe-challenge'; // Use your GitHub repository
+  const repository = 'moe-ielts-2'; // Use your GitHub repository
 
   new iam.Role(stack, 'GitHubActionsRole', {
     assumedBy: new iam.OpenIdConnectPrincipal(provider).withConditions({
